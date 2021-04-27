@@ -1,0 +1,6 @@
+name: 'K6 Install Action'
+description: 'Downloads and install K6 tool localy'
+
+runs:
+  using: 'node12'
+  main: 'index.js'
