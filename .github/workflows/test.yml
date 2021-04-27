@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  start-selenoid:
+    runs-on: ubuntu-latest
+    name: Check k6 install action
+
+    steps:
+      - name: Set up Node.js 14
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 14
+
+      - name: Install k6
+        uses: LedgerHQ/k6-install-action@v1.0.0
