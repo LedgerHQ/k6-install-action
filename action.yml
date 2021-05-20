@@ -1,6 +1,7 @@
 name: 'K6 Install Action'
-description: 'Downloads and install K6 tool localy'
+description: 'Downloads and install K6 tool locally'
 
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'setup.js'
+  post: 'cleanup.js'
