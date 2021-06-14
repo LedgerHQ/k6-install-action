@@ -1,17 +1,15 @@
 const { execSync } = require('child_process')
 
-console.log(`INSTALLING K6`);
-
 async function run() {
     try {
+        console.info(`INSTALLING K6`);
         execSync('sudo yum install https://dl.k6.io/rpm/repo.rpm', {stdio: 'inherit'})
     } catch (error) {
-        console.log(error.message)
+        console.info(`dl.k6.io/rpm/repo.rpm is installed already!`)
     }
 
     execSync('sudo yum install -y --nogpgcheck k6', {stdio: 'inherit'})
+    console.info(`K6 INSTALLED SUCCESSFULLY`);
 }
 
 run()
-
-console.log(`K6 INSTALLED SUCCESSFULLY`);
