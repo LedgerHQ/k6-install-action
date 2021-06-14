@@ -1,4 +1,4 @@
-# k6-setup-centos-action
+# k6-setup-centos github action
 
 This action provides the following functionality for GitHub Actions runners:
 - Downloading and setting up [k6](https://k6.io/docs/getting-started/installation/#fedora-centos) for rpm-based ones like Fedora and CentOS
@@ -9,5 +9,5 @@ This action provides the following functionality for GitHub Actions runners:
 ```yaml
 steps:
   - name: Install K6
-    uses: LedgerHQ/k6-install-action@v2
+    uses: LedgerHQ/k6-install-centos@v2
 ```
