@@ -1,11 +1,9 @@
 const { execSync } = require('child_process')
 
-console.log(`REMOVE K6`);
-
 async function run() {
+    console.info(`REMOVE K6`);
     execSync('sudo yum -y remove k6', {stdio: 'inherit'})
+    console.info(`K6 REMOVED SUCCESSFULLY`);
 }
 
 run()
-
-console.log(`K6 REMOVED SUCCESSFULLY`);
