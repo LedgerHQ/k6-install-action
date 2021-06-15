@@ -1,5 +1,5 @@
-name: 'K6 Install Action'
-description: 'Downloads and install K6 tool locally'
+name: 'k6 CentOS Install Action'
+description: 'Downloads and install K6 tool for rpm-based ones like Fedora and CentOS'
 
 runs:
   using: 'node12'
